@@ -40,7 +40,7 @@
             <nav class="l-side-nav">
               <ul class="side-nav">
                 <li class="is-active"><span>Home</span></li>
-                <li><span>Works</span></li>
+                <li><span>Games</span></li>
                 <li><span>About</span></li>
                 <li><span>Contact</span></li>
                 <li><span>Request Now</span></li>
@@ -100,8 +100,9 @@
                     <ul class="slider">
                       <li class="slider--item slider--item-left">
                         <a target="_blank" href="https://hunterhobbq.github.io/Pick_Apple">
-                          <div class="slider--item-image">
-                            <img src="assets/img/Hunt_The_Dot.webp" alt="Victory" />
+                          <div class="slider--item-image play-btn">
+                            <img src="assets/img/Hunt_The_Dot.webp" alt="Hunt The Dot" />
+                            <img class="svg" loading="lazy" src="./play-btm.svg" alt="" />
                           </div>
                           <p class="slider--item-title">Hunt_The_Dot</p>
                           <p class="slider--item-description">Version 2: Apple Coming From Anywhere And You Have To Hunt Them All Down.</p>
@@ -109,17 +110,21 @@
                       </li>
                       <li class="slider--item slider--item-center">
                         <a target="_blank" href="https://hunterhobbq.github.io/Pick_Drop_Play">
-                          <div class="slider--item-image">
-                            <img src="assets/img/Pick_The_Apple.webp" alt="Metiew and Smith" />
+                          <div class="slider--item-image play-btn">
+                            <img src="assets/img/Pick_The_Apple.webp" alt="Pick The Apple" />
+                            <img class="svg" loading="lazy" src="./play-btm.svg" alt="" />
                           </div>
+                          <a target="_blank" href="https://drive.google.com/file/d/19f9WDVrPDZXcANSrVk5t3q1sZdV-3HQw/view?usp=drive_link">APK Download</a>
                           <p class="slider--item-title">Pick_Drop_Play</p>
                           <p class="slider--item-description">Version 1: Apple From The Sky Falling Down & You Have to Pick It Before Too Late.</p>
+                          <h4></h4>
                         </a>
                       </li>
                       <li class="slider--item slider--item-right">
                         <a target="_blank" href="https://hunterhobbq.github.io/Click_The_Dot">
-                          <div class="slider--item-image">
-                            <img src="assets/img/Click_The_Dot.webp" alt="Alex Nowak" />
+                          <div class="slider--item-image play-btn">
+                            <img src="assets/img/Click_The_Dot.webp" alt="Click The Dot" />
+                            <img class="svg" loading="lazy" src="./play-btm.svg" alt="" />
                           </div>
                           <p class="slider--item-title">Click_The_Dot</p>
                           <p class="slider--item-description">Version 3: How Fast Is Your Clicks, Don't Miss Any Click Is The Key.</p>
@@ -385,7 +390,7 @@
       </div>
       <ul class="outer-nav">
         <li class="is-active">Home</li>
-        <li>Works</li>
+        <li>Games</li>
         <li>About</li>
         <li>Contact</li>
         <li>Request Now</li>
@@ -402,5 +407,25 @@
 
 <style>
   .apple_front {
+  }
+  .svg {
+    /* display: none; */
+    position: absolute;
+    top: 10%;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* width: 1vw; */
+    max-width: 5vw;
+    max-width: 5dvw;
+    /* height: 10dvw; */
+    opacity: 0;
+    z-index: 99;
+  }
+  .svg:hover {
+    opacity: 1;
   }
 </style>
